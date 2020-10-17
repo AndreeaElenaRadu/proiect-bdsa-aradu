@@ -20,8 +20,8 @@ USE `catalog`;
 
 CREATE TABLE IF NOT EXISTS `categories` (
   `id` smallint(5) NOT NULL AUTO_INCREMENT,
-  `name` varchar(30) DEFAULT NULL,
-  `description` varchar(100) DEFAULT NULL,
+  `name` varchar(50) DEFAULT NULL,
+  `description` varchar(300) DEFAULT NULL,
   `createdAt` timestamp,
   `updatedAt` timestamp,
   PRIMARY KEY (`id`),
@@ -51,7 +51,7 @@ CREATE TABLE IF NOT EXISTS `products` (
   `category_id` smallint(5) DEFAULT NULL,
   `name` varchar(30) DEFAULT NULL,
   `description` varchar(100) DEFAULT NULL,
-  `price` int(11) NOT NULL,
+  `price` varchar(20) NOT NULL,
   `image` varchar(100) DEFAULT NULL,
   `createdAt` timestamp,
   `updatedAt` timestamp,
